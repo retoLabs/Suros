@@ -24,7 +24,7 @@ function modSwitch(ok,tipo){
 			window.location = 'system.html?idSess='+utils.vgk.sesion_id;
 			break;
 		case 'ADMIN' :
-			window.location = 'dashboard.html?idSess='+utils.vgk.sesion_id;
+			window.location = 'datos.html?idSess='+utils.vgk.sesion_id;
 			break;
 		case 'TESTS' :
 			window.location = 'testLogin.html';

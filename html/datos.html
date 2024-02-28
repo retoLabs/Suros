@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Repo Agro</title>
+
+
+<!--  ==================== LOCAL ==================  -->
+	<link rel="stylesheet" href="lib/bootstrap_335.min.css">
+	<link rel="stylesheet" href="lib/font-awesome_430.min.css">
+	<script src="lib/jquery_321.min.js"></script>
+	<script src="lib/bootstrap_337.min.js"></script>
+	<script src="lib/vue_2517.js"></script>
+	<script type='text/javascript' src='lib/libBase64.js'></script>
+
+	<script>
+		function buscar(frm){
+			var gen = document.getElementById('genero').value;
+			var epi = document.getElementById('epiteto').value;
+			console.log('G: '+gen+' '+epi);
+			showInfoEspecie(gen,epi);
+		}
+	</script>
+<style>
+	#divBase {max-height: 500px;overflow: auto;}
+</style>
+
+	<script type='module' src="js/datos.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+
+		<div id="lstEsp">
+			<span class="col-md-4">
+				<ul style="max-height:500px;overflow:auto; border: 1px blue solid;">
+					<li v-for="item in items" @click="showInfo(item)">{{item.cod}} {{item.nom}} {{item.ctg}}</li>
+				</ul>
+			</span>
+			<span v-if="activ" class="col-md-4">
+				<img  style="width:200px" v-bind:src="foto" alt="foto" />
+				<form> 
+					<input class="form-control" type="text" v-model="activ.tipo">
+					<input class="form-control" type="text" v-model="activ.tag">
+					<input class="form-control" type="text" v-model="activ.cod">
+					<input class="form-control" type="text" v-model="activ.genero">
+					<input class="form-control" type="text" v-model="activ.especie">
+					<input class="form-control" type="text" v-model="activ.img">
+					<button type="button" @click="update(activ)">Grabar</button>
+				</form>
+			</span>
+		<div > <!--lstEsp -->
+
+	</div>  <!--row -->
+</div> <!--container -->
+</body>
+</html>
