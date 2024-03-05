@@ -6,6 +6,19 @@ nom varchar(20),
 ctg varchar(5),
 txt varchar(128)
 );
+
+create table canjes (
+id integer primary key autoincrement,
+cod varchar2(5),
+mmjj varchar2(5),
+tipo varcahr2(5),
+num integer,
+std integer,
+sint integer,
+cava integer,
+txt varcha2(128),
+FOREIGN KEY (cod) REFERENCES quien (cod) 
+);
 */
 
 
@@ -17,16 +30,11 @@ import ajax   from '../k1/libK1_Ajax.js'
 
 function ecoQuienesSQL(xhr){
    var filas = utils.csv2filas(xhr.responseText);
-	vgApp.lista = new Array();
-	filas.map(function(fila){
-		vgApp.lista.push(fila);
-	})
-	console.log('Tabla: '+vgApp.tabla);
-	vgApp.appLstEsp.actualiza(filas);
+ 	vgApp.appLstEsp.actualiza(filas);
 }
 
 function getQuienes(){
-	var stmt = "select id,cod,nom,ctg from quien;";
+	var stmt = "select * from quien;";
 	console.log(stmt);
 
 	var stmtB64 = Base64.encode(stmt);
@@ -41,14 +49,21 @@ function getQuienes(){
 	params.eco = ecoQuienesSQL; 
 
 	ajax.ajaxCmdShell(params,body);
+	return 0;
 }
 
 //------------------------------------------------------------------- DML SQLite Agro
 function ecoUpdateFila(xhr){
-	alert(xhr.responseText);
+	console.log(xhr.responseText);
 }
 function updateFila(fila){
-	var stmt = "update agro set img='"+fila.img+"' where cod='" + fila.cod+"';";
+	console.log(utils.o2s(fila));
+	var stmt = "update quien set nom='"+fila.nom+"'";
+	stmt +=",cod='"+fila.cod+"'";
+	stmt +=",ctg='"+fila.ctg+"'";
+	stmt +=",txt='"+fila.txt+"'";
+	stmt+= " where id='" + fila.id+"';";
+
 	console.log(stmt);
 
 	var stmtB64 = Base64.encode(stmt);
@@ -78,24 +93,13 @@ function initAppRepo(){
 				updateFila(item);
 			},
 			actualiza : function(items){
+				console.log('items:', items.length);
 				this.items = items;
 				if (items.length) this.idAct = items[0].id0;
 			},
 			showInfo : function(item){
-				if (vgApp.tabla == 'HORTA'){ 
-					this.activ = item;
-					this.foto = 'img/horta/Viv1-H/'+item.img;
-					showInfoEspecie(item.genero,item.especie);
-				}
-				else if (vgApp.tabla == 'FRUTA'){
-					this.activ = item;
-					this.foto = 'img/fruta/Viv1-F/'+item.img;
-					showInfoEspecie(item.genero,item.especie);
-				}
-				else{ 
-					this.activ = null;
-					showInfoEspecie(item.genero,item.especie);
-				}
+				this.activ = item;
+//				alert(item.cod);
 			}
 		}
 	})

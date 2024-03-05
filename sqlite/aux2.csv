@@ -1,0 +1,103 @@
+tipo|num|fecha|cod||std|sint|cava
+ESTV|0|may20|YO|Prototipo (9 mayo 2020)|300||
+ESTV|1|jun21|GEMMA|Gemma (~150 taps)|150||
+ESTV|2|may22|PAQUI|Paquita (regala Libro plantas)|||
+ESTV|3|sep22|MARI|Maricruz|||
+ESTV|4|oct22|ORIOL|Oriol|||
+ESTV|5|nov22|STEF|Estefanía|||
+ESTV|6|dic22|CRIS|Cristina|||
+ESTV|7|dic22|YO|Masovería|||
+ESTV|8|dic22|SILVI|Silvia|||
+ESTV|9|dic22|KAROL|Carol|||
+ESTV|10|dic22|ENCA1|Encarni|||
+ESTV|11|dic22|MARIA|María Samarra|||
+ESTV|12|ene23|GALU|Galú (~70 taps)|70||
+ESTV|13|feb23|PROVI|Provi|||
+ESTV|14|feb23|DOLORS|Dolors|||
+ESTV|15|feb23|ENCA2|Encarna|||
+ESTV|16|mar23|BIENVE|Bienve|||
+ESTV|17|abr23|CARLES|Carles Samarra|||
+ESTV|18|abr23|GALU|Galú (~70 taps)|70||
+ESTV|19|may23|H83|Restaurant H83 (~150 taps)|150||
+ESTV|20|may23|H83|idem.|||
+ESTV|21|may23|NOUX|Nou Xupito (~95 taps + ~50 taps) (Sonia) Encarga corazón|95||
+|||||50||
+ESTV|22|jun23|VINAL|Vinalia (~25+~31) (Alexandre y Fernanda) |56||
+ESTV|23|jun23|MPUIG|Montse Puigsubirá|||
+ESTV|24|jun23|XAVI|Xavi y Ana|||
+ESTV|25|jul23|LAVILA|Montserrat (La Vila)|||
+ESTV|26|jul23|TXELL|Txell/David (Trasserra)|||
+ESTV|27|sep23|NOUX|Nou Xupito (le traje el corazón) (~160 taps)(27/5: 17/2taps)|160||
+|||NOUX||27|5|
+|||NOUX||17|2|
+ESTV|28|sep23|WAWEI|Restaurante Wawel (7/4 + 7 + 6/2 taps) (Sicilia x Ross-Prov)|20||6
+ESTV|29|sep23|KSEROL|Restaurante K.serol (166/12 taps) (Nàpols x C. Cent)|166||12
+ESTV|30|sep23|CHELI|Restaurante Casa Cheli (34/2/7 taps) (Provenza x Roger de Flor)|34|2|7
+ESTV|31|oct23|YOL_MP|Yolanda (Coord Mercat de Pagès [MP] Xarxa Consum Solidari)(???)|||
+ESTV|32|oct23|NURIA|Núria (Veina - MP) (34/2 taps)|34||2
+ESTV|33|nov23|PAU_CT|"Pau (""Can Tria"" : Fr i Verd MP)(???) Regala pote de tomate triturado"|||
+ESTV|34|nov23|TCRAJA|"Jordi & Carla (""Talcomraja"" : Vins MP) (14/0/0)"|14||
+ESTV|35|nov23|NOEL|Noel(Fr i Verd MP) (69 taps)(25.3.2024:20 taps)|69||
+||mar24|NOEL||20||
+ESTV|36|nov23|ELOINA|Eloína (Veina - MP)(40 taps)|40||
+ESTV|37|nov23|GENIS|Genís (Coord MP) (12/0/1)|12||1
+ESTV|38|nov23|JAIZK|Jaizkibel (107/44/.) Encarga soporte iPad (ST0)|107|44|
+ESTV|39|dic23|TRAST|Restaurante Trastero (34/9/4) (Sicilia / Aragó)|34|9|4
+ESTV|40|dic23|BERTA|Berta (Firaire MP)(???)|||
+ESTV|41|dic23|SERGI|Sergi (Firaire MP)(???)|||
+ESTV|42|dic23|GENIS|Panera MP|||
+ESTV|43|dic23|PUCHI|Paloma/Puchi (Covaticas)|||
+ESTV|44|dic23|ALICIA|Alicia (Los Belones)|||
+ESTV|45|dic23|LAI|Lai/Abelardo (Los Belones)|||
+ESTV|46|ene24|VIO|Violeta (Papás)|||
+ESTV|47|ene24|AURORA|Aurora (Escalera Rosselló 1o 3a)(1//24)|1||24
+ESTV|48|ene24|BARSF|Mercat Sagrada Família (Bar) (131//3)|131||3
+ESTV|49|ene24|PAU_XU|Pau (Xurros MP)(???)|||
+ESTV|50|ene24|TUR1|Sr Argentino (turista MP)|||
+ESTV|51|ene24|TUR2|Sra Holandesa (turista MP)|||
+ESTV|52|ene24|TRAST|Restaurante Trastero (31/28/3)|31|28|3
+ESTV|53|ene24|STOP|Restaurante STOP (75/1/6)|75|1|6
+ESTV|54|ene24|VINAL|Vinalia (0/0/0)|||
+ESTV|55|ene24|AURORA|Aurora (1o 3a) (2/0/15)|2||15
+ESTV|56|feb24|VEI1|Veina 1 (MP) (38/1/8)|38|1|8
+ESTV|57|feb24|VEI2|Veina 2 (MP) (26/1/0)|26|1|
+ESTV|58|feb24|VEI3|Veina 3 (MP) (47/0/5)|47||5
+ESTV|59|feb24|NURIA|Nuria (Veina - MP) (22/2/1)|22|2|1
+ESTV|60|feb24|PAQUI|Paquita (para su hija mayor) (300/30/0)|300|30|
+ESTV|61|feb24|JSARDA|José Sardá (15/1/21)|15|1|21
+ESTV|62|feb24|EMMA|Emma (para su amigo que se lo regalará a su padre)(27/0/0)|27||
+|||||||
+STELF|0|may23|YO|Prototipo|||
+STELF|1|may23|MONTSY|Montse|||
+STELF|2|may23|DOLORS|Dolors|||
+STELF|3|may23|VIO|Violeta|||
+STELF|4|jun23|JORDI|Jordi Samarra|||
+STELF|5|jun23|SILVI|Silvia|||
+STELF|6|jul23|XAVI|Xavi|||
+STELF|7|ag023|PERE|Pere (les Fonts)|||
+STELF|8|ago23|E210|Gemma (les Fonts)|||
+STELF|9|sep23|MONTSY|Montse (BCN)|||
+STELF|10|sep23|YO|Pepe (BCN)|||
+STELF|11|sep23|KAROL|Carol|||
+STELF|12|oct23|E210|Ana (Espai210)|||
+STELF|13|oct23|E210|Montse (Espai210)|||
+STELF|14|oct23|E210|X (Espai210)|||
+STELF|15|oct23|E210|X (Espai210)|||
+STELF|16|nov23|JAIZK|Jaizkibel (50/53/10)(Sicilia x Casp-Ausías March)|50|53|10
+STELF|17|nov23|ELOINA|Eloina (Veina MP)|||
+STELF|18|dic23|GUILLE|Guillermo|||
+STELF|19|dic23|NURIA|Nuria (Vecina MP)|||
+STELF|20|dic23|PAULA|Paula (Firaire MP Cosmetica)|||
+STELF|21|dic23|EMER|Emer (Firarire MP Can Tria)|||
+STELF|22|dic23|MARI|Maricruz|||
+STELF|23|dic23|JORDI_R|Jordi Ramos (Sr de Trasserra)|||
+STELF|24|ene24|ENCA2|Encarna (Yaya)|||
+STELF|25|ene24|ENCA1|Encarni|||
+STELF|26|ene24|NOEL|Noel (Firaire MP) (25 taps)|25||
+STELF|27|ene24|NURIA|Núria (Vecina MP) (46/3/1)|46|3|1
+STELF|28|ene24|PAU|Pau-Can Tria (Firaire MP)|||
+STELF|29|ene24|LAURA|Laura (neteja)|||
+STELF|30|ene24|PAQUI|Paquita (Capolat - Les Fonts)|||
+STELF|31|feb24|MIGUEL|Miguel (Café MP)|||
+STELF|32|feb24|TCRAJA|Talcomraja (Vins MP)|||
+STELF|33|feb24|SOFIA|Sofía (Veina MP)|20||

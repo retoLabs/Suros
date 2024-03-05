@@ -15,7 +15,6 @@ function sesionDatosOK(){
 
 function initDatos(){
 	sess.validaSesion('usrMenu', sesionDatosOK); // kernel/libK1_sesion.js
-	sesionDatosOK();
 }
 
 window.onload = initDatos;

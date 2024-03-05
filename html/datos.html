@@ -39,15 +39,16 @@
 					<li v-for="item in items" @click="showInfo(item)">{{item.cod}} {{item.nom}} {{item.ctg}}</li>
 				</ul>
 			</span>
+
+
 			<span v-if="activ" class="col-md-4">
 				<img  style="width:200px" v-bind:src="foto" alt="foto" />
 				<form> 
-					<input class="form-control" type="text" v-model="activ.tipo">
-					<input class="form-control" type="text" v-model="activ.tag">
 					<input class="form-control" type="text" v-model="activ.cod">
-					<input class="form-control" type="text" v-model="activ.genero">
-					<input class="form-control" type="text" v-model="activ.especie">
-					<input class="form-control" type="text" v-model="activ.img">
+					<input class="form-control" type="text" v-model="activ.nom">
+					<input class="form-control" type="text" v-model="activ.ctg">
+					<input class="form-control" type="text" v-model="activ.txt">
+					<!-- input class="form-control" type="text" v-model="activ.img" -->
 					<button type="button" @click="update(activ)">Grabar</button>
 				</form>
 			</span>
