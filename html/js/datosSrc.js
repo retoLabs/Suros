@@ -26,7 +26,7 @@ import utils  from '../k1/libK1_Utils.js'
 import ajax   from '../k1/libK1_Ajax.js'
 
 
-//------------------------------------------------------------------- Arbol
+//------------------------------------------------------------------- Quienes
 
 function ecoQuienesSQL(xhr){
    var filas = utils.csv2filas(xhr.responseText);
@@ -52,7 +52,33 @@ function getQuienes(){
 	return 0;
 }
 
-//------------------------------------------------------------------- DML SQLite Agro
+//------------------------------------------------------------------- Canjes
+
+function ecoCanjesSQL(xhr){
+   var filas = utils.csv2filas(xhr.responseText);
+ 	vgApp.appCanjes.actualiza(filas);
+}
+
+function getCanjes(cod){
+	var stmt = "select * from canjes where cod='"+cod+"';";
+	console.log(stmt);
+
+	var stmtB64 = Base64.encode(stmt);
+	var body = {
+		id : 1234567, //vgApp.encript.sessId,
+		path : vgApp.sqlite.pathDB,
+		db   : vgApp.sqlite.repoDB,
+		stmt : stmtB64
+	}
+	var params = vgApp.paramsXHR;
+	params.base = vgApp.sqlite.base;
+	params.eco = ecoCanjesSQL; 
+
+	ajax.ajaxCmdShell(params,body);
+	return 0;
+}
+
+//------------------------------------------------------------------- DML SQLite 
 function ecoUpdateFila(xhr){
 	console.log(xhr.responseText);
 }
@@ -99,10 +125,34 @@ function initAppRepo(){
 			},
 			showInfo : function(item){
 				this.activ = item;
-//				alert(item.cod);
+				getCanjes(item.cod);
 			}
 		}
 	})
+
+	vgApp.appCanjes = new Vue({
+		el: "#canjes",
+		data: {
+			items: [],
+			activ: null
+		},
+		methods : {
+			update : function(item){
+				updateFila(item);
+			},
+			actualiza : function(items){
+				console.log('items:', items.length);
+				this.items = items;
+				if (items.length) this.idAct = items[0].id0;
+			},
+			showInfo : function(item){
+				this.activ = item;
+//				alert(item.cod);
+			}
+		}
+
+})
+
 }
 
 export default {initAppRepo,getQuienes}

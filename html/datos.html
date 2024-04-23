@@ -36,7 +36,7 @@
 		<div id="lstEsp">
 			<span class="col-md-4">
 				<ul style="max-height:500px;overflow:auto; border: 1px blue solid;">
-					<li v-for="item in items" @click="showInfo(item)">{{item.cod}} {{item.nom}} {{item.ctg}}</li>
+					<li v-for="item in items" @click="showInfo(item)">{{item.nom}}</li>
 				</ul>
 			</span>
 
@@ -52,6 +52,38 @@
 					<button type="button" @click="update(activ)">Grabar</button>
 				</form>
 			</span>
+		</div>
+
+			<div id="canjes">
+			  <table class="table table-striped">
+			  <thead>
+			    <tr>
+			      <th>ID</th>
+			      <th>COD</th>
+			      <th>Fecha</th>
+			      <th>Tipo</th>
+			      <th>Num</th>
+			      <th>Std</th>
+			      <th>Sint</th>
+			      <th>Cava</th>
+			      <th>Text</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr v-for="(item) in items">
+			       <td>{{ item.id }}</td> 
+			       <td>{{ item.cod }}</td>  
+			       <td>{{ item.mmjj }}</td>  
+			       <td>{{ item.tipo }}</td>  
+			       <td>{{ item.num }}</td>  
+			       <td>{{ item.std }}</td>  
+			       <td>{{ item.sint }}</td>  
+			       <td>{{ item.cava }}</td>  
+			       <td>{{ item.txt }}</td>  
+			    </tr>
+			   </tbody>
+			</table>
+			</div>
 		<div > <!--lstEsp -->
 
 	</div>  <!--row -->

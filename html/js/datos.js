@@ -1,7 +1,7 @@
 
-import {vgApp,goPag}    from '/js/suros_VGlob.js'
+import {vgApp,goPag}    from '/suros/js/suros_VGlob.js'
 
-import src from '/js/datosSrc.js'
+import src from '/suros/js/datosSrc.js'
 import sess   from '../k1/libK1_Sesion.js'
 
 window.vgApp = vgApp; // import para Ajax

@@ -1,10 +1,10 @@
 
-import {vgk}  from '/k1/libK1_Utils.js'
+import {vgk}  from '../k1/libK1_Utils.js'
 
 export var vgApp = {
 	paramsXHR : {
 		fase : 'alfa',
-		url : 'http://' + window.location.host,
+		url : 'http://' + window.location.host + '/suros/',
 		base : '/datos',
 		otro : '',
 		iam : '',
@@ -12,9 +12,9 @@ export var vgApp = {
 	},
 	sqlite : {
 		base   : '/shell/sqlite',
+		pathDB : 'apps/Suros/sqlite',
 		userDB : 'usersSuros.sqlite',
 		sessDB : 'sessSuros.sqlite',
-		pathDB : 'apps/Suros/sqlite',
 		repoDB : 'repoSuros.sqlite',
 		notaDB : 'notasSuros.sqlite',
 		stmtDB : '',
