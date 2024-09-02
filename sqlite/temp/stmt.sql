@@ -1,2 +1,2 @@
 .headers ON
-select * from canjes where cod='NOUX';
+select * from canjes where cod='VIO';

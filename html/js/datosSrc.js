@@ -124,7 +124,7 @@ function initAppRepo(){
 				if (items.length) this.idAct = items[0].id0;
 			},
 			showInfo : function(item){
-				this.activ = item;
+				vgApp.appCanjes.activ = item;
 				getCanjes(item.cod);
 			}
 		}

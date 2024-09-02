@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<title>Repo Agro</title>
+	<title>Datos</title>
 
 
 <!--  ==================== LOCAL ==================  -->
@@ -13,14 +13,6 @@
 	<script src="lib/vue_2517.js"></script>
 	<script type='text/javascript' src='lib/libBase64.js'></script>
 
-	<script>
-		function buscar(frm){
-			var gen = document.getElementById('genero').value;
-			var epi = document.getElementById('epiteto').value;
-			console.log('G: '+gen+' '+epi);
-			showInfoEspecie(gen,epi);
-		}
-	</script>
 <style>
 	#divBase {max-height: 500px;overflow: auto;}
 </style>
@@ -33,58 +25,54 @@
 <div class="container">
 	<div class="row">
 
-		<div id="lstEsp">
-			<span class="col-md-4">
+		<div id="lstEsp" class="col-md-2">
+			<h3>Lista entidades</h3>
 				<ul style="max-height:500px;overflow:auto; border: 1px blue solid;">
 					<li v-for="item in items" @click="showInfo(item)">{{item.nom}}</li>
 				</ul>
-			</span>
+		</div > <!--lstEsp -->
 
-
-			<span v-if="activ" class="col-md-4">
+			<!--span v-if="activ" class="col-md-4">
 				<img  style="width:200px" v-bind:src="foto" alt="foto" />
 				<form> 
 					<input class="form-control" type="text" v-model="activ.cod">
 					<input class="form-control" type="text" v-model="activ.nom">
 					<input class="form-control" type="text" v-model="activ.ctg">
 					<input class="form-control" type="text" v-model="activ.txt">
-					<!-- input class="form-control" type="text" v-model="activ.img" -->
+					<input class="form-control" type="text" v-model="activ.img">
 					<button type="button" @click="update(activ)">Grabar</button>
 				</form>
-			</span>
-		</div>
+			</span-->
 
-			<div id="canjes">
-			  <table class="table table-striped">
+		<div id="canjes"  class="col-md-10">
+			<h2 v-if="activ">{{ activ.nom }}</h2>
+			<table class="table table-striped">
 			  <thead>
 			    <tr>
-			      <th>ID</th>
-			      <th>COD</th>
-			      <th>Fecha</th>
-			      <th>Tipo</th>
-			      <th>Num</th>
-			      <th>Std</th>
-			      <th>Sint</th>
-			      <th>Cava</th>
-			      <th>Text</th>
+						<th>COD</th>
+						<th>Fecha</th>
+						<th>Tipo</th>
+						<th>Num</th>
+						<th>Std</th>
+						<th>Sint</th>
+						<th>Cava</th>
+						<th>Text</th>
 			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr v-for="(item) in items">
-			       <td>{{ item.id }}</td> 
-			       <td>{{ item.cod }}</td>  
-			       <td>{{ item.mmjj }}</td>  
-			       <td>{{ item.tipo }}</td>  
-			       <td>{{ item.num }}</td>  
-			       <td>{{ item.std }}</td>  
-			       <td>{{ item.sint }}</td>  
-			       <td>{{ item.cava }}</td>  
-			       <td>{{ item.txt }}</td>  
-			    </tr>
-			   </tbody>
+				</thead>
+				<tbody>
+					<tr v-for="(item) in items">
+						<td>{{ item.cod }}</td>  
+						<td>{{ item.mmjj }}</td>  
+						<td>{{ item.tipo }}</td>  
+						<td>{{ item.num }}</td>  
+						<td>{{ item.std }}</td>  
+						<td>{{ item.sint }}</td>  
+						<td>{{ item.cava }}</td>  
+						<td>{{ item.txt }}</td>  
+					</tr>
+				</tbody>
 			</table>
-			</div>
-		<div > <!--lstEsp -->
+		</div> <!-- div Canjes -->
 
 	</div>  <!--row -->
 </div> <!--container -->
